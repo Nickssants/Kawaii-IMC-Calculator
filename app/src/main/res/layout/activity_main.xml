@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b_g"
+    android:hapticFeedbackEnabled="false"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/ICON"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="false"
+        android:cropToPadding="false"
+        android:foregroundGravity="center"
+        android:scaleType="center"
+        app:srcCompat="@drawable/i_con" />
+
+    <ImageView
+        android:id="@+id/KAWAIIIMC"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/kawaiimc" />
+
+    <ImageView
+        android:id="@+id/PESO"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@drawable/digite_peso" />
+
+    <EditText
+        android:id="@+id/editPeso"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/re_tang"
+        android:backgroundTintMode="add"
+        android:ems="10"
+        android:gravity="center"
+        android:hapticFeedbackEnabled="false"
+        android:hint="Digite seu peso"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <ImageView
+        android:id="@+id/imageView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/digite_altura" />
+
+    <EditText
+        android:id="@+id/editAltura"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:background="@drawable/re_tang"
+        android:ems="10"
+        android:hint="Digite sua altura"
+        android:inputType="number|numberDecimal|numberSigned"
+        android:selectAllOnFocus="false"
+        android:singleLine="false"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        tools:ignore="TouchTargetSizeCheck" />
+
+    <Button
+        android:id="@+id/Calcular"
+        style="@style/Widget.AppCompat.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/calcul_a"
+        android:backgroundTint="#00FFFFFF"
+        android:foreground="@drawable/calcul_a"
+        android:hapticFeedbackEnabled="false"
+        android:onClick="calcularImc"
+        android:text="Calcular"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textStyle="bold|italic"
+        app:iconTint="#00FFFFFF"
+        app:rippleColor="#00FFFFFF"
+        app:strokeColor="#00FFFFFF" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        app:srcCompat="@drawable/re_sultado" />
+
+    <TextView
+        android:id="@+id/textResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:fontFamily="sans-serif"
+        android:foreground="@drawable/re_tang"
+        android:padding="10dp"
+        android:text="Resultado"
+        android:textAlignment="center"
+        android:textColor="#FFFFFF"
+        android:textColorHint="#FFFFFF"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+</LinearLayout>
